@@ -427,11 +427,11 @@ public class BrowseInfo extends BrowseInfoBase {
         TvInputManager manager = (TvInputManager) mContext.getSystemService(
                 Context.TV_INPUT_SERVICE);
         if (manager != null) {
-            for (TvInputInfo input : manager.getTvInputList()) {
-                if (input.isPassthroughInput()) {
-                    return true;
-                }
-            }
+            //for (TvInputInfo input : manager.getTvInputList()) {
+              //  if (input.isPassthroughInput()) {
+                    return false;
+                //}
+            //}
         }
         return false;
     }
